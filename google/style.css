@@ -11,7 +11,7 @@ body {
 .container-header {
   display: flex;
   justify-content: flex-end;
-  height: 100px;
+  height: 6.25rem;
 }
 
 .container-header a {
@@ -25,7 +25,7 @@ body {
 
 .container-header p #perfil {
   margin-top: -0.7rem;
-  width: 40px;
+  width: 2.5rem;
   border-radius: 50%;
 }
 
@@ -38,22 +38,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 43.75rem;
   margin-top: -1.5rem;
 }
 
 .container-main img {
-  width: 302px;
-  height: 92px;
+  width: 18.875rem;
+  height: 5.75rem;
 }
 
 .container-main input {
   margin-top: 2rem;
-  padding: 1rem 14.5rem 1rem 14.5rem;
-  border-radius: 30px;
+  padding: 1rem 27rem 1rem 2rem;
+  border-radius: 1.875rem;
   border: 1px rgb(206, 204, 204) solid;
   outline: none;
+  flex-shrink: 1;
+  font-size: 1.25rem;
+  font-weight: 100;
 }
+
 .container-main p {
   margin-top: 2rem;
   font-size: 0.9rem;
@@ -97,7 +101,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   background-color: #f2f2f2;
 }
 
