@@ -1,0 +1,25 @@
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: #0f0;
+}
+
+.blue {
+  background-color: aqua;
+}
