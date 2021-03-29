@@ -6,7 +6,6 @@ const App = () => {
   const [list, setList] = useState([]);
 
   const input = useRef(null);
-  const label = useRef(null);
 
   const handleSubmit = () => {
     if (input.current.value === "") {
@@ -17,8 +16,8 @@ const App = () => {
     }
   };
 
-  const handleDelete = (lista) => {
-    const newBlogs = list.filter((element) => element !== lista);
+  const handleDelete = (todo) => {
+    const newBlogs = list.filter((element) => element !== todo);
     setList(newBlogs);
   };
 
@@ -35,12 +34,12 @@ const App = () => {
       </div>
       <ul>
         <form>
-          {list.map((lista) => (
+          {list.map((todo) => (
             <>
               <li>
-                <input type="checkbox" id={list.indexOf(lista)} />
-                <label htmlFor={list.indexOf(lista)}>{lista}</label>
-                <button onClick={() => handleDelete(lista)} type="button">
+                <input type="checkbox" id={list.indexOf(todo)} />
+                <label htmlFor={list.indexOf(todo)}>{todo}</label>
+                <button onClick={() => handleDelete(todo)} type="button">
                   <img src={xImg} alt="Deletar o Todo" />
                 </button>
               </li>
