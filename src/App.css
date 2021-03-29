@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  width: 100%;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Cantarell";
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: crimson;
+  margin-bottom: 2rem;
+}
+
+.header button {
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  border: none;
+  border-radius: 25px;
+  background: crimson;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+input {
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+  border-radius: 25px;
+  border: 1px solid crimson;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 2px solid crimson;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+  padding: 0.2rem 1rem 1rem 0.2rem;
+}
+
+label {
+  margin-left: 1rem;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+li button {
+  background-color: #fff;
+}
+
+li button img {
+  width: 16px;
+  height: 16px;
+  margin-top: -1.5rem;
 }
