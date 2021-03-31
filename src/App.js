@@ -25,8 +25,8 @@ const App = () => {
     <div className="App">
       <h1>TodoList Trainee</h1>
       {/* <div className="header">
-        <button>Feitos</button>
-        <button>Fazendo</button>
+        <button onClick={showDone}>Feitos</button>
+        <button onClick={showDoing}>Fazendo</button>
       </div> */}
       <div className="main">
         <input ref={input} type="text" />
